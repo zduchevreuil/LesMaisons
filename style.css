@@ -4,6 +4,8 @@ hr {
 
 
 body {
+    position: relative;
+    top: 70px;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -16,16 +18,14 @@ body {
     position: relative;
     top: -5px;
     left: 5px;
+    border: 2px solid black;
+    border-radius: 4px;
 }
 
-.input {
-    width: 99%;
-    position: relative;
-    left: 90px;
+#acceuille {
+    width: 90%;
     position: relative;
     display: inline-block;
-    top: -20px;
-    border-radius: 4px;
 }
 
 .logo {
@@ -41,11 +41,11 @@ hr {
     position: relative;
     top: 8px;
     position: relative;
-    top: -23px;
+    top: -20px;
 }
 
 .stile {
-    
+    border: 2px solid black;
     height: 40px;
     margin: 5px;
     display: inline-block;
@@ -57,7 +57,7 @@ hr {
 .connexion {
     position: relative;
     top: 25px;
-    left: 80%;
+    left: 78.6%;
     background-color: #5bb6bd;
     border: 1px solid #5bb6bd;
     color: white;
@@ -76,45 +76,14 @@ hr {
     border: #5bb6bd;
     color: white;
 }
-
-.sauv {
-    background-color: #5bb6bd;
-    border: 1px solid #5bb6bd;
-    color: white;
-    border-radius: 4px;
-    padding: 0.4rem 0.6rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    font-size: .875rem;
-    font-family: 'Borel', cursive;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    padding: 11px;
-    position: relative;
-    top: -3px;
-}
-
 .noob {
     width: 2%;
     height: 30px;
 }
 
-button {
-    border-radius: 4px;
-    background: #5bb6bd;
-    border: #5bb6bd;
-    color: white;
-    font-size: .875rem;
-    font-family: 'Borel', cursive;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-}
-
 #langue {
     position: relative;
-    left: 80%;
+    left: 78%;
     top: 25px;
     padding: 0.4rem 0.6rem;
     border-radius: 5px;
@@ -125,20 +94,16 @@ button {
     top: -23px;
 }
 
-.hrhaut {
-    position: relative;
-    top: -8px;
-    margin: 0;
-}
-
 .hr {
     position: relative;
-    top: 45;
+    top: 45px;
     margin: 0;
+    width: 110.9%;
 }
 
 
 .hhrr {
+
     margin-top: 14px;
     margin-bottom: -5px;
     text-align: center;
@@ -228,4 +193,85 @@ p {
     position: relative;
     top: -25px;
     color: black;
+}
+
+/* La navbar*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+
+
+.navbar {
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    top: -5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #1d1d1d;
+    color: #fff;
+}
+
+.logo_title, .navbar ul li a {
+    color: #fff;
+    padding: 12px;
+    margin: 0 6px;
+    font-family: 'Borel', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+body {
+    font-family: 'Borel', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar ul li a:hover {
+   color: #1d1d1d;
+   background: #ffb42a;
+   border-radius: 4px;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Le Menu Contact */
+
+#contact {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+}
+
+/* La categori contact */
+
+li{
+    margin: 10px;
 }
